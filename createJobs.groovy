@@ -1,7 +1,7 @@
 pipelineJob('pipeline-demo') {
     definition {
         cps {
-            script(readFileFromWorkspace(pipeline-demo-job.groovy))
+            script(this.readFileFromWorkspace(pipeline-demo-job.groovy))
             sandbox()
         }
     }
