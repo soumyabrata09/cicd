@@ -10,6 +10,8 @@
 ./gradlew docler dockerRun
 ````
 
+> **[Video guide to initial Jenkins Setup](https://www.youtube.com/watch?v=s7dw0ahriQY)**
+
 _Docker troubleshooting commands_
 > $ docker ps [ To list containers ]
 
