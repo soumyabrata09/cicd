@@ -5,19 +5,19 @@ plugins {
     id 'pl.allegro.tech.build.axion-release' version '1.10.1'
 }
 
-group 'org.sam09.cicd'
-version '1.0-SNAPSHOT'
 project.version = scmVersion.version
+group = "com.sam09.cicd"
+version = "1.0-SNAPSHOT"
 
 docker {
     name "${project.name}:${project.version}"
-    files "plugins.txt"
+    files "plugins.txt","seed-job.xml"
 }
 
 dockerRun {
     name "${project.name}"
     image "${project.name}:${project.version}"
-    ports '8080:8101'
+    ports '8080:8080'
     clean true
     daemonize false
 }
