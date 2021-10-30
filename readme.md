@@ -1,4 +1,4 @@
-##This repository is consisting the CI/CD Jenkins resources
+## This repository is consisting the CI/CD Jenkins resources
 
 **Pre-Requisite**
  - Gradle in local
