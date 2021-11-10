@@ -6,3 +6,17 @@ pipelineJob('pipelineJob') {
         }
     }
 }
+pipelineJob('cryptography-build') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/soumyabrata09/Cryptography-Reference-App.git'
+                    }
+                    branch 'master'
+                }
+            }
+        }
+    }
+}

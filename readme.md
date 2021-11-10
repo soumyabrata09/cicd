@@ -21,6 +21,8 @@ _Docker troubleshooting commands_
 
 > port forwarded from default 8080 to 8101
 
+> To stop the docker PS container execute: ./gradlew dockerStop 
+
 > [To find the PID running on a specific port to forcefully stop them] 
 
 > netstat -ano | findstr < Port Number >
